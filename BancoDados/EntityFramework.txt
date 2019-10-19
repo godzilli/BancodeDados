@@ -1,0 +1,30 @@
+﻿~~ Anotações sobre o entity framework Code First ~~
+
+1 - Instalar o Entity Framework no projeto
+	Install-Package EntityFramework //copiar e colar isso após o 'PM>'
+
+2 - Criar as classes de modelo
+ 
+3 - Criar a classe de Contexto = Context
+	Representar/Herdar as funcionalidades do EF
+	Represeta o Banco de Dados
+	Definir quem são os modelos que vão virar tabelas no banco
+
+4 - Habilitar as migrações
+	-Enable-Migrations
+
+--ALTERAÇÃO OU EXCLUSÃO--
+5 - Adicionar uma migração
+	Add-Migration NomeMigracao
+
+6 - Atualizar o banco de dados
+	Update-Database -verbose
+--
+
+7 - Desinstalar o EF no projeto
+	Uninstall-Package EntityFramework
+
+(Precisa de uma chave primária, chamada como Id ou ProdutoId)
+
+~~ Visualizar o Bando de dados ~~ 
+1 - View/SQL Server Object Explorer, procurar o nome do banco de dados, dbo.produtos por exemplo, botão direito e View Data.
